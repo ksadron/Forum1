@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -34,44 +34,17 @@ namespace Forum.Pages.LoginPage
 
         public void OnPost()
         {
-            //Hashowanie danych uzytkowanika
-            string passwordPattern = @"[a-z0-9]+";
-            string namePattern = @"[a-z]+";
-            string emailPattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
 
-            if (Regex.IsMatch(Password, passwordPattern))
-            {
                 HashedPassword = BCrypt.Net.BCrypt.HashPassword(Password);
-            }
-            else
-            {
-                HashedPassword = "Z�y format has�a";
-            }
-            if (Regex.IsMatch(FirstName, namePattern))
-            {
+
                 HashedFirstName = BCrypt.Net.BCrypt.HashString(FirstName);
-            }
-            else
-            {
-                HashedFirstName = "Z�y format Imienia";
-            }
-            if (Regex.IsMatch(LastName, namePattern))
-            {
+
                 HashedLastName = BCrypt.Net.BCrypt.HashString(LastName);
-            }
-            else
-            {
-                HashedLastName = "Z�y format Nazwiska";
-            }
-            if (Regex.IsMatch(Email, emailPattern))
-            {
+
                 HashedEmail = BCrypt.Net.BCrypt.HashString(Email);
-            }
-            else
-            {
-                HashedEmail = "Z�y format Emaila";
-            }
+
         }
 
     }
 }
+*/
