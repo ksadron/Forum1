@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Forum.Data;
+using Auth0.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication;
 
 namespace Forum.Pages.LoginPage
 {
@@ -40,5 +42,12 @@ namespace Forum.Pages.LoginPage
 
             return RedirectToPage("../MainForm/Forum");
         }
+        /*public async Task OnGet(string returnUrl = "../MainForm/Forum")
+        {
+            var authenticationProperties = new LoginAuthenticationPropertiesBuilder()
+                   .WithRedirectUri(returnUrl)
+                   .Build();
+            await HttpContext.ChallengeAsync(Auth0Constants.AuthenticationScheme, authenticationProperties);
+        }*/
     }
 }
