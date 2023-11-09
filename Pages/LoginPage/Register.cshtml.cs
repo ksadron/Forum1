@@ -9,11 +9,11 @@ using Forum.Data;
 
 namespace Forum.Pages.LoginPage
 {
-    public class Register : PageModel
+    public class RegisterModel : PageModel
     {
-        private readonly Forum.Data.ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-        public Register(Forum.Data.ApplicationDbContext context)
+        public RegisterModel(ApplicationDbContext context)
         {
             _context = context;
         }
@@ -26,6 +26,8 @@ namespace Forum.Pages.LoginPage
         [BindProperty]
         public User User{ get; set; }
 
+        public ApplicationDbContext Context => _context;
+
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
@@ -36,7 +38,7 @@ namespace Forum.Pages.LoginPage
             _context.Users.Add(User);
             await _context.SaveChangesAsync();
 
-            return RedirectToPage("./Register");
+            return RedirectToPage("../MainForm/Forum");
         }
     }
 }

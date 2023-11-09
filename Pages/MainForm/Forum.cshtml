@@ -1,0 +1,714 @@
+﻿@page
+@model ForumModel
+@{
+}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div class="main">
+            <div class="side-bar">
+                <div class="popular-tags">
+                    <div class="div">
+                        <div class="title"><div class="text-wrapper">Najlepsze posty</div></div>
+                        <div class="tags">
+                            <div class="div-2">
+                                <div class="icon"><img class="img" src="img/" /></div>
+                                <div class="name">
+                                    <div class="text-wrapper-2">Post</div>
+                                    <div class="text-wrapper-3">Posted by: username</div>
+                                </div>
+                            </div>
+                            <div class="div-2">
+                                <div class="bitcoin-wrapper"><img class="img" src="img/" /></div>
+                                <div class="name">
+                                    <div class="text-wrapper-2">Post</div>
+                                    <div class="text-wrapper-3">Posted by: username</div>
+                                </div>
+                            </div>
+                            <div class="div-2">
+                                <div class="design-wrapper"><img class="img" src="img/" /></div>
+                                <div class="name">
+                                    <div class="text-wrapper-2">Post</div>
+                                    <div class="text-wrapper-3">Posted by: username</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div">
+                <div class="creat-post">
+                    <div class="div-3">
+                        <div class="abatars"><img class="mask-group" src="img/" /></div>
+                        <div class="input-data"><input class="pavel-gvay" size="62" placeholder="dsadasadsa fsdfsdfdsaf sda" type="text" /></div>
+                        <button class="button"><div class="text-wrapper-4">Create Post</button>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="div-4">
+                        <img class="rectangle" src="img/" />
+                        <div class="data">
+                            <div class="data-2">
+                                <div class="title-2">
+                                    <img class="bitcoin-has-tumbled"
+                                         src="img/bitcoin-has-tumbled-from-its-record-high-of-58-000-after-words-from-three-wise-men-and-women.png" />
+                                    <div class="div-2">
+                                        <div class="tag"><div class="finance">tag</div></div>
+                                    </div>
+                                </div>
+                                <div class="user">
+                                    <div class="avatars"><img class="memoji-boys" src="img/" /></div>
+                                    <div class="name-2">
+                                        <div class="name">
+                                            <div class="name-3">
+                                                <p class="p">usernaaame</p>
+                                                <div class="ellipse"></div>
+                                            </div>
+                                            <div class="element-weeks-ago">Created date</div>
+                                        </div>
+                                        <div class="action">
+                                            <div class="text-wrapper-5">Views</div>
+                                            <div class="text-wrapper-5">Likes</div>
+                                            <div class="text-wrapper-5">Comments</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="love">
+                                <div class="icon-like"><div class="heart"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-bar">
+                <div class="meetups">
+                    <div class="div-5">
+                        <div class="title"><div class="text-wrapper">Twoje Posty</div></div>
+                    </div>
+                </div>
+                <div class="data-3">
+                    <div class="data-4">
+                        <div class="title-3">
+                            <p class="text-wrapper-6">
+                                dfgsuihdf sugisdfhgiufdsh g8udfshg 8osdfgh 4378yudfs hgdfsiughdfiusgh iudfs ghuidfshguifds hgdfousighfsduyi hb
+                            </p>
+                            <div class="div-2">
+                                <div class="tag"><div class="text-wrapper-7">tag</div></div>
+                                <div class="tag"><div class="text-wrapper-7">tag</div></div>
+                                <div class="tag"><div class="text-wrapper-7">tag</div></div>
+                            </div>
+                        </div>
+                        <div class="action-2">
+                            <div class="text-wrapper-7">21,37 Views</div>
+                            <div class="text-wrapper-7">23,343 Likes</div>
+                            <div class="text-wrapper-7">60 comments</div>
+                        </div>
+                    </div>
+                    <div class="memoji-boys-wrapper"><img class="memoji-boys-2" src="img/memoji-boys-3-15.png" /></div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+
+    <style>
+
+
+
+    body{
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(125deg, rgba(0, 77, 77, 0.90) 4.32%, rgba(41, 44, 72, 0.50) 83.31%, rgba(159, 159, 159, 0.62) 96.47%);
+    }
+
+
+    .main {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 20px;
+        position: relative;
+    }
+
+        .main .side-bar {
+            display: inline-flex;
+            flex-direction: column;
+            height: 804px;
+            align-items: flex-start;
+            gap: 20px;
+            position: relative;
+            flex: 0 0 auto;
+        }
+
+        .main .popular-tags {
+            display: flex;
+            width: 210px;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 20px 25px 20px 20px;
+            position: relative;
+            flex: 0 0 auto;
+            background-color: #262d34;
+            border-radius: 16px;
+        }
+
+        .main .div {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            position: relative;
+            flex: 0 0 auto;
+        }
+
+        .main .title {
+            display: inline-flex;
+            align-items: flex-end;
+            gap: 3px;
+            position: relative;
+            flex: 0 0 auto;
+        }
+
+        .main .text-wrapper {
+            position: relative;
+            width: fit-content;
+            margin-top: -1px;
+            font-family: "SourceSans Pro-SemiBold", Helvetica;
+            font-weight: 600;
+            color: rgba(247, 247, 247, 1);
+            font-size: 16px;
+            letter-spacing: 0px;
+            line-height: 24px;
+            white-space: nowrap;
+            font-style: normal;
+        }
+
+        .main .tags {
+            flex-direction: column;
+            display: inline-flex;
+            align-items: flex-start;
+            gap: 10px;
+            position: relative;
+            flex: 0 0 auto;
+        }
+
+        .main .div-2 {
+            display: inline-flex;
+            align-items: flex-start;
+            gap: 10px;
+            position: relative;
+            flex: 0 0 auto;
+        }
+
+        .main .icon {
+            display: inline-flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 6px;
+            position: relative;
+            flex: 0 0 auto;
+            background-color: #5a4f43;
+            border-radius: 4px;
+        }
+
+        .main .img {
+            position: relative;
+            width: 20px;
+            height: 20px;
+        }
+
+        .main .name {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+            flex: 0 0 auto;
+        }
+
+        .main .text-wrapper-2 {
+            position: relative;
+            width: fit-content;
+            margin-top: -1px;
+            font-family: "SourceSans Pro-SemiBold", Helvetica;
+            font-weight: 600;
+            color: rgba(247, 247, 247, 1);
+            font-size: 12px;
+            letter-spacing: 0px;
+            line-height: 18px;
+            white-space: nowrap;
+            font-style: normal;
+        }
+
+        .main .text-wrapper-3 {
+            position: relative;
+            width: fit-content;
+            font-family: "SourceSans Pro-Regular", Helvetica;
+            font-weight: 400;
+            color: rgba(151, 152, 157, 1);
+            font-size: 10px;
+            letter-spacing: 0px;
+            line-height: 16px;
+            white-space: nowrap;
+            font-style: normal;
+        }
+
+        .main .bitcoin-wrapper {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 6px;
+            position: relative;
+            flex: 0 0 auto;
+            background-color: #473e3b;
+            border-radius: 4px;
+        }
+
+        .main .design-wrapper {
+            display: inline-flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 6px;
+            position: relative;
+            flex: 0 0 auto;
+            background-color: #444f5e;
+            border-radius: 4px;
+        }
+
+        .main .creat-post {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 20px;
+            position: relative;
+            flex: 0 0 auto;
+            background-color: #262d34;
+            border-radius: 16px;
+        }
+
+        .main .div-3 {
+            display: inline-flex;
+            align-items: center;
+            gap: 20px;
+            position: relative;
+            flex: 0 0 auto;
+        }
+
+        .main .abatars {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(249, 223, 192, 1);
+            border-radius: 20px;
+        }
+
+        .main .mask-group {
+            position: absolute;
+            width: 30px;
+            height: 32px;
+            top: 4px;
+            left: 5px;
+        }
+
+        .main .input-data {
+            display: flex;
+            width: 553px;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 12px 0px 12px 12px;
+            position: relative;
+            background-color: #2c353d;
+            border-radius: 6px;
+        }
+
+        .main .p {
+            position: relative;
+            width: fit-content;
+            margin-top: -1px;
+            font-family: "SourceSans Pro-Regular", Helvetica;
+            font-weight: 400;
+            color: rgba(133, 142, 173, 1);
+            font-size: 14px;
+            letter-spacing: 0px;
+            line-height: 22px;
+            white-space: nowrap;
+            font-style: normal;
+        }
+
+        .main .button {
+            display: inline-flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 12px 16px;
+            position: relative;
+            flex: 0 0 auto;
+            background-color: rgba(255, 105, 52, 1);
+            border-radius: 6px;
+            all: unset;
+            box-sizing: border-box;
+        }
+
+    .button .text-wrapper-4:hover {
+        color: green;
+    }
+
+    .main .text-wrapper-4 {
+        position: relative;
+        width: fit-content;
+        margin-top: -1px;
+        font-family: "Rubik-Medium", Helvetica;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 20px;
+        white-space: nowrap;
+    }
+
+    .main .post {
+        display: flex;
+        flex-direction: column;
+        width: 785px;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 20px;
+        position: relative;
+        flex: 0 0 auto;
+        background-color: #262d34;
+        border-radius: 16px;
+    }
+
+    .main .div-4 {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 20px;
+        position: relative;
+        flex: 0 0 auto;
+    }
+
+    .main .rectangle {
+        position: relative;
+        width: 168px;
+        height: 168px;
+        margin-top: -4px;
+        margin-bottom: -8px;
+        margin-left: -6px;
+    }
+
+    .main .data {
+        width: 569px;
+        align-items: flex-start;
+        gap: 20px;
+        display: flex;
+        position: relative;
+    }
+
+    .main .data-2 {
+        flex-direction: column;
+        width: 519px;
+        align-items: flex-start;
+        gap: 30px;
+        display: flex;
+        position: relative;
+    }
+
+    .main .title-2 {
+        display: flex;
+        flex-direction: column;
+        width: 521px;
+        align-items: flex-start;
+        gap: 10px;
+        margin-right: -2px;
+        position: relative;
+        flex: 0 0 auto;
+    }
+
+    .main .bitcoin-has-tumbled {
+        position: relative;
+        width: 33.84px;
+        flex: 0 0 auto;
+    }
+
+    .main .tag {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 4px 10px;
+        position: relative;
+        flex: 0 0 auto;
+        background-color: #2c353d;
+        border-radius: 20px;
+    }
+
+    .main .finance {
+        position: relative;
+        width: fit-content;
+        margin-top: -1px;
+        font-family: "SourceSans Pro-SemiBold", Helvetica;
+        font-weight: 600;
+        color: rgba(197, 208, 230, 1);
+        font-size: 10px;
+        letter-spacing: 0px;
+        line-height: 16px;
+        white-space: nowrap;
+        font-style: normal;
+    }
+
+    .main .user {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        flex: 0 0 auto;
+        margin-right: -52px;
+    }
+
+    .main .avatars {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        position: relative;
+        background-color: rgba(240, 241, 254, 1);
+    }
+
+    .main .memoji-boys {
+        position: absolute;
+        width: 28px;
+        height: 34px;
+        top: 3px;
+        left: 6px;
+    }
+
+    .main .name-2 {
+        display: flex;
+        width: 521px;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .main .name-3 {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        position: relative;
+        flex: 0 0 auto;
+    }
+
+    .main .pavel-gvay {
+        position: relative;
+        width: fit-content;
+        margin-top: -1px;
+        font-family: "SourceSans Pro-SemiBold", Helvetica;
+        font-weight: 600;
+        color: rgba(244, 246, 248, 1);
+        font-size: 14px;
+        letter-spacing: 0px;
+        line-height: 22px;
+        white-space: nowrap;
+        font-style: normal;
+        background: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    .main .ellipse {
+        position: relative;
+        width: 5px;
+        height: 5px;
+        background-color: rgba(197, 208, 230, 1);
+        border-radius: 2.5px;
+    }
+
+    .main .element-weeks-ago {
+        position: relative;
+        width: fit-content;
+        font-family: "SourceSans Pro-Regular", Helvetica;
+        font-weight: 400;
+        color: rgba(197, 208, 230, 1);
+        font-size: 10px;
+        letter-spacing: 0px;
+        line-height: 16px;
+        white-space: nowrap;
+        font-style: normal;
+    }
+
+    .main .action {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 40px;
+        position: relative;
+        flex: 0 0 auto;
+    }
+
+    .main .text-wrapper-5 {
+        position: relative;
+        width: fit-content;
+        margin-top: -1px;
+        font-family: "SourceSans Pro-Regular", Helvetica;
+        font-weight: 400;
+        color: rgba(197, 208, 230, 1);
+        font-size: 10px;
+        letter-spacing: 0px;
+        line-height: 16px;
+        white-space: nowrap;
+        font-style: normal;
+    }
+
+    .main .love {
+        display: flex;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+        position: relative;
+        background-color: #2c353d;
+        border-radius: 15px;
+    }
+
+    .main .icon-like {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        margin-top: -5px;
+        margin-bottom: -5px;
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .main .heart {
+        position: relative;
+        height: 18px;
+        top: 1px;
+        background-image: url(./img/subtract.svg);
+        background-size: 100% 100%;
+    }
+
+        .main .right-bar {
+            display: flex;
+            flex-direction: column;
+            width: 338px;
+            height: 798px;
+            align-items: flex-start;
+            gap: 20px;
+            position: relative;
+        }
+
+        .main .meetups {
+            display: flex;
+            flex-direction: column;
+            width: 325px;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 20px;
+            position: relative;
+            flex: 0 0 auto;
+            background-color: #262d34;
+            border-radius: 16px;
+        }
+
+        .main .div-5 {
+            display: flex;
+            flex-direction: column;
+            width: 295px;
+            align-items: flex-start;
+            margin-right: -10px;
+            gap: 20px;
+            position: relative;
+            flex: 0 0 auto;
+        }
+
+        .main .data-3 {
+            width: 325px;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 11px;
+            flex: 0 0 auto;
+            background-color: #262d34;
+            border-radius: 20px;
+            display: flex;
+            position: relative;
+        }
+
+        .main .data-4 {
+            flex-direction: column;
+            width: 264px;
+            align-items: center;
+            gap: 20px;
+            padding: 5px;
+            display: flex;
+            position: relative;
+        }
+
+        .main .title-3 {
+            display: flex;
+            flex-direction: column;
+            width: 264px;
+            align-items: flex-start;
+            gap: 10px;
+            margin-left: -5px;
+            margin-right: -5px;
+            position: relative;
+            flex: 0 0 auto;
+        }
+
+        .main .text-wrapper-6 {
+            position: relative;
+            width: 264px;
+            height: 49px;
+            margin-top: -1px;
+            font-family: "SourceSans Pro-SemiBold", Helvetica;
+            font-weight: 600;
+            color: rgba(247, 247, 247, 1);
+            font-size: 12px;
+            letter-spacing: 0px;
+            line-height: 18px;
+            font-style: normal;
+        }
+
+        .main .text-wrapper-7 {
+            position: relative;
+            width: fit-content;
+            margin-top: -1px;
+            font-family: "SourceSans Pro-Regular", Helvetica;
+            font-weight: 400;
+            color: #c5d0e6;
+            font-size: 9px;
+            letter-spacing: 0px;
+            line-height: 14px;
+            white-space: nowrap;
+            font-style: normal;
+        }
+
+        .main .action-2 {
+            display: inline-flex;
+            align-items: flex-start;
+            gap: 30px;
+            position: relative;
+            flex: 0 0 auto;
+        }
+
+        .main .memoji-boys-wrapper {
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+            position: relative;
+            background-color:  rgba(240, 241, 254, 1);;
+        }
+
+        .main .memoji-boys-2 {
+            position: absolute;
+            width: 20px;
+            height: 25px;
+            top: 3px;
+            left: 5px;
+        }
+
+
+    </style>
+
