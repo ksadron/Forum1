@@ -1,6 +1,9 @@
 using Auth0.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Forum.Data;
 
 /*
 public class Startup
@@ -88,6 +91,13 @@ app.MapRazorPages();
 app.Run();
 */
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("ForumDbContextConnection") ?? throw new InvalidOperationException("Connection string 'ForumDbContextConnection' not found.");
+
+builder.Services.AddDbContext<ForumDbContext>(options =>
+	options.UseSqlite(connectionString));
+
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+	.AddEntityFrameworkStores<ForumDbContext>();
 
 // Add services to the container.
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
