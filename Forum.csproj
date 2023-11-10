@@ -6,14 +6,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup><!--Compile Remove="Pages\Index.cshtml.cs" /-->
-  
-    <Compile Remove="Pages\LoginPage\**" />
-    <Content Remove="Pages\LoginPage\**" />
-    <EmbeddedResource Remove="Pages\LoginPage\**" />
-    <None Remove="Pages\LoginPage\**" />
-  </ItemGroup>
-
   <ItemGroup>
     <None Remove="Pages\LoginPage\" />
     <None Remove="Data\" />

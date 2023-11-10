@@ -4,6 +4,8 @@ using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Forum.Data;
+using Forum.Areas.Identity.Data;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 /*
 public class Startup
@@ -112,8 +114,10 @@ builder.Services.AddRazorPages(options =>
 {
 	options.Conventions.AuthorizePage("/Account/Logout");
 	options.Conventions.AuthorizePage("/MainForm/Forum");
+	//options.Conventions.AuthorizePage("/Index");
 	// Add more pages as needed
 });
+builder.Services.AddSingleton<IEmailSender, EmailSender>();
 
 var app = builder.Build();
 

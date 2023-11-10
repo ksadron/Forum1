@@ -2,7 +2,7 @@
 using System;
 namespace Forum.Data
 {
-    public class User
+    public class AspNetUsers
     {
         public int Id { get; set; }
         public string user { get; set; }
